@@ -427,12 +427,18 @@ namespace CoolStuff.AwesomeFeature
 Если строки продолжения не отступываются автоматически, отступите их на одну остановку табуляции (четыре пробела).
 Добавление по крайней мере одной пустой строки между определениями методов и свойств.
 Использование скобок для ясности предложений в выражениях, как показано в следующем коде.
-```C#
-if ((startX > endX) && (startX > previousX))
-{
-    // Take appropriate action.
-}
-```
-[1](#1)  
-[2.1](#2.1)
+
+> [!NOTE]
+> ```C#
+> if ((startX > endX) && (startX > previousX))
+> {
+>    // Take appropriate action.
+> }
+> ```
+
+[1](#общие-соглашения-о-коде-c)  
+[2.1](#идентификаторы-диагностики)
+
+[[https://github.com/Krasnov-Midnight/Regulatory-Documents/blob/main/Image/Icon/Code_white.png|alt=Krasnov-Midnight|width="16"|height="16"]]
+
 Исключения возникают, когда в примере объясняется приоритет оператора или выражения.
