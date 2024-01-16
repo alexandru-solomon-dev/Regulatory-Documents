@@ -5,9 +5,7 @@
 
 <p align="left">
   <img width="20" height="20" src="https://github.com/Krasnov-Midnight/Regulatory-Documents/blob/main/Image/Icon/Git_Red.png">
-p {
-  padding-left: 40px;
-}
 <a href="https://github.com/Krasnov-Midnight/Regulatory-Documents/wiki/Git">Git</a>
 </p>
+
 [Git](https://github.com/Krasnov-Midnight/Regulatory-Documents/wiki/Git)
