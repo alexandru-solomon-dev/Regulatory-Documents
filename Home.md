@@ -1,11 +1,16 @@
  Добро пожаловать! В каком разделе у вас возникли вопросы?
 
-![Code Icon](https://github.com/Krasnov-Midnight/Regulatory-Documents/blob/main/Image/Icon/Code_black.png)
-[Code Style](https://github.com/Krasnov-Midnight/Regulatory-Documents/wiki/Code-Style)
 
-<p align="left">
-  <img width="20" height="20" src="https://github.com/Krasnov-Midnight/Regulatory-Documents/blob/main/Image/Icon/Git_Red.png">
-<code><a href="https://github.com/Krasnov-Midnight/Regulatory-Documents/wiki/Git"> Git </a></code>
-</p>
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset ="https://github.com/Krasnov-Midnight/Regulatory-Documents/blob/main/Image/Icon/Code_black.png">
+  <source media="(prefers-color-scheme: dark)" srcset ="https://github.com/Krasnov-Midnight/Regulatory-Documents/blob/main/Image/Icon/Code_white.png">
+  <img width="16" height="16" src="https://github.com/Krasnov-Midnight/Regulatory-Documents/blob/main/Image/Icon/Code_black.png">
+</picture>
+<a href="https://github.com/Krasnov-Midnight/Regulatory-Documents/wiki/Code-Style"> Code Style </a>
 
-[Git](https://github.com/Krasnov-Midnight/Regulatory-Documents/wiki/Git)
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset ="https://github.com/Krasnov-Midnight/Regulatory-Documents/blob/main/Image/Icon/Git_Black.png">
+  <source media="(prefers-color-scheme: dark)" srcset ="https://github.com/Krasnov-Midnight/Regulatory-Documents/blob/main/Image/Icon/Git_Red.png">
+  <img width="16" height="16" src="https://github.com/Krasnov-Midnight/Regulatory-Documents/blob/main/Image/Icon/Git_Red.png">
+</picture>
+<a href="https://github.com/Krasnov-Midnight/Regulatory-Documents/wiki/Git"> Git </a>
