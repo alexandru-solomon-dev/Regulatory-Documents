@@ -1,1 +1,1 @@
-Welcome to the Regulatory-Documents wiki!
+ Добро пожаловать! О чем вы хотите узнать на этот раз?
