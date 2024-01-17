@@ -6,13 +6,13 @@
   <source media="(prefers-color-scheme: dark)" srcset ="https://github.com/Krasnov-Midnight/Regulatory-Documents/blob/main/Image/Icon/Code_white.png">
   <img width="16" height="16" src="https://github.com/Krasnov-Midnight/Regulatory-Documents/blob/main/Image/Icon/Code_black.png">
 </picture>
-&ensp; <a href="https://github.com/Krasnov-Midnight/Regulatory-Documents/wiki/Code-Style">Code Style</a>
+&ensp; <a href="Code-Style">Code Style</a>
 <br>
 
 <picture>
   <img width="16" height="16" src="https://github.com/Krasnov-Midnight/Regulatory-Documents/blob/main/Image/Icon/Git_Red.png">
 </picture>
-&ensp; <a href="https://github.com/Krasnov-Midnight/Regulatory-Documents/wiki/Git">Git</a>
+&ensp; <a href="Git">Git</a>
 <br>
 
-💡 &nbsp;[Terms and explanations](https://github.com/Krasnov-Midnight/Regulatory-Documents/wiki/Terms-and-explanations)
+💡 &nbsp;[Terms and explanations](Terms-and-explanations)
