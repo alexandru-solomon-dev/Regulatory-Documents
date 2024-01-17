@@ -9,7 +9,7 @@
 - Имена локальных переменных, параметров: **camelCase**. Например, `localVariable`, `MyMethod(int intParameter)`.
 - Имена для `private` полей и свойств: **_camelCase**. Например, `_privateField`.
 - Имена интерфейсов начинаются с заглавной буквы I. Как правило имя содержит существительное и/или прилагательного с суффиксом -able.  Например `IMediator`, `IDamageable`, `IPayloadState`.
-- Типы атрибутов заканчиваются словом Attribute.
+- Типы атрибутов заканчиваются словом Attribute. Например `CustomValidationAttribute`
 - При объявлении эвента начинать его имя со слова 'on', если это возможно. Например `public event Action<T> OnValueChanged`, `OnTakeDamage`.
 - При объявлении поля класса его имя не должно содержать существительное из имени класса. Например, для класса `PlayerMove` можно объявить поле `MoveSpeed`, но не `PlayerSpeed`. Или для `Heath` - `CurrentValue`, а не `CurrentHeath`.
 
