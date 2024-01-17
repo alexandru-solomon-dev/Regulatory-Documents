@@ -1,1 +1,1 @@
-[Return to Home page](https://github.com/Krasnov-Midnight/Regulatory-Documents/wiki/home)
+[Return to Home page](home)
