@@ -15,3 +15,4 @@
 &ensp; <a href="https://github.com/Krasnov-Midnight/Regulatory-Documents/wiki/Git">Git</a>
 <br>
 
+💡 [Terms and explanations](https://github.com/Krasnov-Midnight/Regulatory-Documents/wiki/Terms-and-explanations)
