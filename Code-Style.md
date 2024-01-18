@@ -18,13 +18,13 @@
 > Например для поля `_rotationSpeed`: 
 > ```c#
 > /// <summary>
-> /// Rotational speed in radians per second
+> /// Rotational speed in radians per second.
 > /// </summary>
 > private float _rotationSpeed;
 > ```
-> Инче переименовать в `_rotationSpeedRadianPerSecond`.
+> Иначе переименовать в `_rotationSpeedRadianPerSecond`.
 
-# Структура класса
+# Организация
 
 Декларации использования пространств имен идут сверху, перед любыми пространствами имен. Порядок использования импорта - алфавитный, за исключением импорта System, который всегда идет первым.
 
@@ -35,14 +35,19 @@ using CodeBase.MyNamespace;
 using UnityEngine;
 using Zenject;
 
-namespace Example
+namespace Namespace1
 {
-   ...
+  ...
+}
 
-   namespace NestedNamespace
-   {
-      ...
-   }
+namespace Namespace2
+{
+  ...
+
+  namespace NestedNamespace
+  {
+     ...
+  }
 }
 ```
 
@@ -67,8 +72,7 @@ namespace Example
 
 > [!Note]
 > - MonoBehaviour эвент методы, такие как `OnTriggerEnter`, `OnEnable` и т.п. Ставятся по иерархии выше.  
-> - Исключением нарушения порядка расположения элементов в зависимости от модификаторов доступа является только для достижения расположения сериализивынных полей в логические группы. Что бы не использовать группировку от сторонних инструментов или Editor скрипты.
-
+> - Исключением нарушения порядка расположения элементов в зависимости от уровня доступа является только для достижения расположения сериализивынных полей в логические группы. Что бы не использовать группировку от сторонних инструментов или Editor скрипты.
 
 # Объявление переменных
 
