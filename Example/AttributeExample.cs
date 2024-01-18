@@ -16,7 +16,7 @@ namespace Example
 
       [HideInInspector] public int DontVisibleForInspector;
       
-      [Header("Functional variable block")]
+      [Header("Functional variables block")]
       [Tooltip("Description for field")]
       [Range(_minimum, _maximum)]
       [SerializeField]
@@ -27,10 +27,12 @@ namespace Example
       [Min(0)]
       [SerializeField]
       private int _multiplier2;
-      [Header("Functional variable block 2")]
-      [Tooltip("Description for field")]
-      [SerializeField]
-      private int _functionalVarriable;
+      
+      [Header("Functional variables block 2")]
+      [SerializeField] private int _functionalVarriable1;
+      [SerializeField] private int _functionalVarriable2;
+      [SerializeField] private int _functionalVarriable3;
+      [SerializeField] private int _functionalVarriable4;
 
       [ContextMenu("Change Functional Value")]
       private void SetRandomValue()
