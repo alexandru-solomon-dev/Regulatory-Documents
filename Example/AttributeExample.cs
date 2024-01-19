@@ -40,7 +40,7 @@ namespace Example
          _powerValue = Random.Range(_minimum, _maximum);
       }
       
-      [ContextMenu("Change Functional Value")]
+      [ContextMenu("Print Result")]
       private void PrintResult()
       {
          Debug.Log(Math.Pow(_multiplier1 * Math.Abs(_multiplier2), _powerValue));
