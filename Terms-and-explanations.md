@@ -27,3 +27,15 @@
 |`internal`          |:white_check_mark:|:white_check_mark:|:x:               |:white_check_mark:|:x:|
 |`protected internal`|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|
 |`public`            |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+
+# Коллекции
+
+| Тип коллекции            | Размер изменяем | Наличие индексатора | Добавление элемента| Удаление Элемента | Поиск элемента |
+|:---|:---:|:---:|:---:|:---:|:---:|
+|Массивы                   | X | V | Х | Х | O(n) |
+|`List<T>`                 | V | V | O(1) / O(n)  $^1$ | O(n) | O(n) |
+|`HashSet<T>`              | V | X | O(1) / O(n)  $^1$ | O(1) | O(1) |
+|`Dictionary<TKey, TValue>`| V | V | O(1) / O(n)  $^1$ | O(1) | O(n) |
+|`Queue<T>`, `Stack<T>`    | V | X | O(1) | O(1) | O(n) |
+
+> 1: Первая оценка - если вместимость (capacity) позволяет и в противном случае.  
