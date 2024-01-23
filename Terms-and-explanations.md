@@ -30,17 +30,28 @@
 
 # Коллекции
 
-> [!Note]
-> Array и List<> представляют линейные, смежные контейнеры.
-> В Array фиксированный объем, в то время как List<> может меняться размер.
-> В некоторых случаях массивы более производительны, но в целом List<> более гибкий.
+`Array` и `List<T>` представляют линейные, смежные контейнеры.  
+В Array фиксированный объем, в то время как `List<T>` может меняться размер.  
+В некоторых случаях массивы более производительны, но в целом `List<T>` более гибкий.
 
-| Тип коллекции            | Размер изменяем | Наличие индексатора | Добавление элемента | Удаление Элемента | Поиск элемента |
+Класс [`Queue<T>`](https://learn.microsoft.com/ru-ru/dotnet/api/system.collections.generic.queue-1?view=net-8.0) представляет коллекцию, которая работает по алгоритму **FIFO** ("первый вошел - первый вышел").  
+Класс [`Stack<T>`](https://learn.microsoft.com/ru-ru/dotnet/api/system.collections.generic.stack-1?view=net-8.0) представляет коллекцию, которая работает по алгоритму **LIFO** ("последний вошел - первый вышел"). 
+
+> [!Note]
+> Коллекции `Queue<T>` и `Stack<T>` в .NET реализованы на основе массива, а не как связанный список.  
+
+Класс [`Dictionary<TKey, TValue>`](https://learn.microsoft.com/ru-ru/dotnet/api/system.collections.generic.dictionary-2?view=net-8.0) представляет реализацию словаря, хранит объекты, пары ключ-значение.   
+Класс [`HashSet<T>`](https://learn.microsoft.com/ru-ru/dotnet/api/system.collections.generic.hashset-1?view=net-8.0) представляет классическое математическое множество. Все объекты уникальны. Если попытаться добавить уже существующий объект в коллекции, то метод `Add(T)` вернет `false` и добавления не произойдет. У каждого элемента есть свой хеш-код, позволяющий идентифицировать его в таблице. Имеется метод `UnionWith(IEnumerable<T>)` позволяющий легко добавлять элементы в множество из других коллекций.  
+Класс [`LinkedList<T>`](https://learn.microsoft.com/ru-ru/dotnet/api/system.collections.generic.linkedlist-1?view=net-8.0) представляет реализацию двухсвязанного списка.
+
+| Тип коллекции            | Размер изменяем | Наличие индексатора | Добавление элемента | Удаление элемента | Поиск элемента |
 |:---|:---:|:---:|:---:|:---:|:---:|
-|Array                     | :x:                | :white_check_mark: | :x:               | :x:  | O(n) |
+|`Array`                   | :x:                | :white_check_mark: | :x:               | :x:  | O(n) |
 |`List<T>`                 | :white_check_mark: | :white_check_mark: | O(1) / O(n)  $^1$ | O(n) | O(n) |
 |`HashSet<T>`              | :white_check_mark: | :x:                | O(1) / O(n)  $^1$ | O(1) | O(1) |
-|`Dictionary<TKey, TValue>`| :white_check_mark: | :white_check_mark: | O(1) / O(n)  $^1$ | O(1) | O(n) |
-|`Queue<T>`, `Stack<T>`    | :white_check_mark: | :x:                | O(1)              | O(1) | O(n) |
+|`Dictionary<TKey, TValue>`| :white_check_mark: | :white_check_mark: | O(1) / O(n)  $^1$ | O(1) | O(1) / O(n)  $^2$ |
+|`Queue<T>`, `Stack<T>`    | :white_check_mark: | :x:                | O(1) / O(n)  $^1$ | O(1) | O(n) |
+|`LinkedList<T>`           | :white_check_mark: | :x:                | O(1)              | O(1) | O(n) |
 
 > 1: Первая оценка - если вместимость (capacity) позволяет и в противном случае.  
+> 2: Первая оценка - по ключу, вторая - по значению.  
