@@ -19,10 +19,10 @@
 - При объявлении эвента начинать его имя со слова 'on', если это возможно. Например `public event Action<T> OnValueChanged`, `OnTakeDamage`.
 - При объявлении поля класса его имя не должно содержать существительное из имени класса. Например, для класса `PlayerMove` можно объявить поле `MoveSpeed`, но не `PlayerSpeed`. Или для `Heath` - `CurrentValue`, а не `CurrentHeath`.
 
-> [!Important]
+> [!Note]
 > При необходимости в имя поля или параметра включите единицы измерения или обязательно распишите [`summary`](#Summary), если это может вызвать путаницу или недопонимание.
 > Например для поля `_rotationSpeed`: 
-> ```c#
+> ```C#
 > /// <summary>
 > /// Rotational speed in radians per second.
 > /// </summary>
@@ -43,7 +43,7 @@
 <details>
 <summary>Example</summary>
 
-```c#
+```C#
 using System;
 using System.Collections;
 using CodeBase.MyNamespace;
@@ -170,9 +170,38 @@ private float DoSomething(float value) =>
 Почти всегда используйте `class`.
 Используйте `struct`, когда с типом можно обращаться как с другими типами значений - например, если экземпляры типа малы и обычно недолговечны или часто встраиваются в другие объекты. Хорошими примерами являются `Vector3`, `Quaternion` и `Bounds`.
 
-## Лямбды и именованные методы
+## Строки
 
-Если лямбда нетривиальна (например, состоит более чем из пары операторов) или используется повторно в нескольких местах, она, вероятно, должна быть именованным методом.
+- В общем, используйте то, что легче всего читается, и лучше всего подходит под задачу.  
+- Имейте в виду, что цепочные конкатенации (`operator+`) будут медленнее и вызовут значительный перерасход памяти.  
+- Для сцепления коротких строк рекомендуется использовать интерполяцию строк.  
+Например, при помощи строкового литерала `$`:  
+`string message = $"Hello, {name}! {DateTime.Now:M} is such a beautiful day today!";`  
+Или при помощи `string.Format`:  
+```C#
+string messageFormat = "Hello, {0}! {1:M} is such a beautiful day today!";
+string message = string.Format(messageFormat, name, DateTime.Now);
+```  
+- Для добавления строк в циклах, особенно при работе со строками больших размеров, для производительности используйте StringBuilder.  
+Например:
+```C#
+public string PrisonerReport(IReadOnlyCollection<Prisoner> prisonerList)
+{
+  string prisonerFormatting = "\nPrisoner {0};\tID: {1};\tLaw article: {2};\tRelease Date:{3:d}";
+  var reportText = new StringBuilder();
+  reportText.Append($"Of prisoners in custody {prisonerList.Count}: ");
+  foreach (Prisoner prisoner in prisonerList)
+  {
+    reportText.Append(string.Format(prisonerFormatting, prisoner.Name, prisoner.Id, prisoner.LawArticle, prisoner.ReleaseDate));
+  }
+
+  return reportText.ToString();
+}
+``` 
+## Делегаты и лямбды
+
+Приветствуется использование системных делегатов [`Func<> и Action<>`](https://learn.microsoft.com/ru-ru/dotnet/standard/delegates-lambdas), не обязательно определять свои типы делегатов.  
+Если [лямбда](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/lambda-expressions) нетривиальна (например, состоит более чем из пары операторов) или используется повторно в нескольких местах, она, вероятно, должна быть именованным методом.  
 
 ## Использование `ref` и `out`
 
