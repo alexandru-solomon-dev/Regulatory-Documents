@@ -198,10 +198,12 @@ public string PrisonerReport(IReadOnlyCollection<Prisoner> prisonerList)
   return reportText.ToString();
 }
 ``` 
-## Делегаты и лямбды
+## Делегаты, лямбды и события
 
-Приветствуется использование системных делегатов [`Func<> и Action<>`](https://learn.microsoft.com/ru-ru/dotnet/standard/delegates-lambdas), не обязательно определять свои типы делегатов.  
-Если [лямбда](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/lambda-expressions) нетривиальна (например, состоит более чем из пары операторов) или используется повторно в нескольких местах, она, вероятно, должна быть именованным методом.  
+- Приветствуется использование системных делегатов [`Func<> и Action<>`](https://learn.microsoft.com/ru-ru/dotnet/standard/delegates-lambdas), не обязательно определять свои типы делегатов.  
+- Делегаты, которые могут быть `event`, должны быть `event`.
+- Если есть подписка на эвент, должна быть и отписка.
+- Если [лямбда](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/lambda-expressions) нетривиальна (например, состоит более чем из пары операторов) или используется повторно в нескольких местах, она, вероятно, должна быть именованным методом.  
 
 > [!Note]
 > Лямбды используют замыкание, избегайте ловушек замыкания.
