@@ -25,7 +25,7 @@ namespace Example
     /// <param name="par1"> Count something. </param>
     /// <param name="arg2"> Functional value. </param>
     /// <returns> Performance result. </returns>
-    delegate float MyDelegate(int par1, string arg2);
+    protected delegate float MyDelegate(int par1, string arg2);
 
     /* Although xml can't get a reference to parameters for events,
        describing them like this will be useful
