@@ -346,3 +346,12 @@ public string PrisonerReport(IReadOnlyCollection<Prisoner> prisonerList)
 1. `<seealso>`
 
 [Примеры использования XML-комментариев](https://github.com/Krasnov-Midnight/Regulatory-Documents/blob/main/Example/XmlCommentaries.cs)
+
+Для xml есть 5 зарезервированных символа, что бы их отобразить необходимо использовать специальные символьные ссылки:
+| Символ | Сущность |
+| --- | --- |
+| < | `&lt;` |
+| > | `&gt;` |
+| & | `&amp;` |
+| ' | `&apos;` |
+| " | `&quot;` |
