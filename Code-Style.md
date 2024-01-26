@@ -16,7 +16,7 @@
 - Имена для `private` полей и свойств: **_camelCase**. Например, `_privateField`.
 - Имена интерфейсов начинаются с заглавной буквы I. Как правило имя содержит существительное и/или прилагательного с суффиксом -able.  Например `IMediator`, `IDamageable`, `IPayloadState`.
 - Типы атрибутов заканчиваются словом Attribute. Например `CustomValidationAttribute`
-- При объявлении эвента начинать его имя со слова 'on', если это возможно. Например `public event Action<T> OnValueChanged`, `OnTakeDamage`.
+- При объявлении сробытия начинать его имя со слова 'on', если это возможно. Например `public event Action<T> OnValueChanged`, `OnTakeDamage`.
 - При объявлении поля класса его имя не должно содержать существительное из имени класса. Например, для класса `PlayerMove` можно объявить поле `MoveSpeed`, но не `PlayerSpeed`. Или для `Heath` - `CurrentValue`, а не `CurrentHeath`.
 
 > [!Tip]
@@ -211,7 +211,7 @@ public string PrisonerReport(IReadOnlyCollection<Prisoner> prisonerList)
 
 - Приветствуется использование системных делегатов [`Func<> и Action<>`](https://learn.microsoft.com/ru-ru/dotnet/standard/delegates-lambdas), не обязательно определять свои типы делегатов.  
 - Делегаты, которые могут быть `event`, должны быть `event`.
-- Если есть подписка на эвент, должна быть и отписка.
+- Если есть подписка на событие, должна быть и отписка от него.
 - Если [лямбда](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/lambda-expressions) нетривиальна (например, состоит более чем из пары операторов) или используется повторно в нескольких местах, она, вероятно, должна быть именованным методом.  
 
 > [!Note]
@@ -320,8 +320,8 @@ public string PrisonerReport(IReadOnlyCollection<Prisoner> prisonerList)
 Так же IntelliSense будет автоматически отображать информацию о задокументированых членах. Что может сильно облегчить работу и сэкономит время вам и другим разработчикам.
 
 Такие комментарии в обязательном порядке составлять для:  
-- классов и структур.
-- `public`, `protected` и `internal` методов и эвентов.
+- классов, структур и делегатов.
+- `public`, `protected` и `internal` методов и событий.
 - для свойств имеющих `set` с модификатором доступа `public`, `protected` и `internal`, которая вызывает какую-либо логику.
 
 > [!Tip]
