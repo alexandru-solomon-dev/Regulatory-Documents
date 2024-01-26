@@ -10,13 +10,13 @@ namespace Example
   [Serializable]
   public class ClassOrganization
   {
-    //Nested Classes
+    // Nested Classes
     [Serializable]
     protected class ProtectedNestedClass { }
 
     private class PrivateNestedClass { }
 
-    //Enums
+    // Enums
     private enum MyEnum
     {
       First = 0,
@@ -24,26 +24,29 @@ namespace Example
       Third = 2
     }
 
-    //Delegates
+    // Delegates
     public delegate void MyDelegate(int parameter);
 
     protected delegate float MyPrivateDelegate(int parameter);
 
-    //Events
+    // Events
     public event MyDelegate OnDoSomething;
+    
     protected event Action<ProtectedNestedClass> OnProtectedAction = delegate { };
 
-    //Specific Fields
+    // static Fields
     public static int Counter;
 
+    // const
     protected const float Epsilon = 0.01f;
     private const string _animationName = "Animation";
 
+    // readonly Fields
     public readonly string Name;
     protected readonly int AnimationHash = Animator.StringToHash(_animationName);
     private readonly float[] _readonlyArray;
 
-    //Fields
+    // Fields
     [Range(0, 1)] public float FunctionalValue;
     [HideInInspector] public int FunctionalValue2;
 
@@ -54,7 +57,7 @@ namespace Example
     private Queue<MyPrivateDelegate> _delegatesQueue = new();
     private MyEnum _enumValue;
 
-    //Properties
+    // Properties
     public IReadOnlyList<float> FloatArray => _readonlyArray;
 
     public float FirstElement
@@ -82,7 +85,13 @@ namespace Example
 
     private bool ListIsEmpty => _floatList.Count == 0;
 
-    //Constructors
+    // static Constructor
+    static ClassOrganization()
+    {
+      Counter = 0;
+    }
+    
+    // Constructors
     public ClassOrganization(string name) : this(name, Array.Empty<float>())
     {
     }
@@ -94,7 +103,7 @@ namespace Example
       Counter++;
     }
 
-    //Destructor
+    // Destructor
     ~ClassOrganization()
     {
       OnDoSomething = null;
@@ -103,7 +112,7 @@ namespace Example
       Counter--;
     }
 
-    //public Methods
+    // public Methods
     public void PublicFoo1()
     {
       //...
@@ -114,7 +123,7 @@ namespace Example
       //...
     }
 
-    //protected Methods
+    // protected Methods
     protected void NoticeOfSomething(int value) => OnDoSomething?.Invoke(value);
 
     protected float ProtectedFoo1()
@@ -124,10 +133,10 @@ namespace Example
       return result;
     }
 
-    //place for Monobehavior's event Methods
+    // place for Monobehavior's event Methods
     //...
 
-    //private Methods
+    // private Methods
     private void PrivateFoo1()
     {
       //...
@@ -137,5 +146,10 @@ namespace Example
     {
       //...
     }
+    
+    // static Methods
+    protected static float ProtectedStaticFoo(float value, bool isNegative) => isNegative ? -value : value;
+    
+    private static float PrivateStaticFoo(float value) => Counter * value * value;
   }
 }
