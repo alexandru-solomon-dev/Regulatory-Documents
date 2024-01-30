@@ -98,7 +98,7 @@
 </details>
 
 <details>
-<summary>Example directory simulation</summary>
+<summary>Example directory view</summary>
 
 <ul>
 <details>
