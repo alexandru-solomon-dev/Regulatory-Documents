@@ -1,4 +1,5 @@
-### [Home](Home)
+### <details><summary>[Home](Home)</summary>
+</details>
 
 <details>
 <summary><h3><a href="Code-Style">Code Style</a></summary>
@@ -16,7 +17,6 @@
   - [Usage ref & out](Code-Style#использование-ref-и-out)
   - [Attribute](Code-Style#атрибуты)
   - [Commentaries](Code-Style#комментарии)
-
 </details>
 
 <details>
@@ -25,7 +25,8 @@
 - [Flow](Git#git-flow)
 - [Naming](Git#именование-веток)
 - [Commits](Git#коммиты)
-
 </details>
 
-### [Project](Project)
+<details>
+<summary><h3><a href="Project">Project</a></summary>
+</details>
