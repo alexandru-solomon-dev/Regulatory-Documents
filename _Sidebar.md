@@ -1,6 +1,8 @@
 ### [Home](Home)
 
-### [Code Style](Code-Style)
+<details>
+<summary><h3><a href="Code-Style">Code Style</a></summary>
+
 - [Naming](Code-Style#правила-именования)
 - [Code formatting](Code-Style#организация)
 - [Recommendation](Code-Style#рекомендации-по-кодированию)
@@ -15,9 +17,15 @@
   - [Attribute](Code-Style#атрибуты)
   - [Commentaries](Code-Style#комментарии)
 
-### [Git](Git)
+</details>
+
+<details>
+<summary><h3><a href="Git">Git</a></summary>
+
 - [Flow](Git#git-flow)
 - [Naming](Git#именование-веток)
 - [Commits](Git#коммиты)
+
+</details>
 
 ### [Project](Project)
