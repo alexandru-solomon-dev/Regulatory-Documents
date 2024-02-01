@@ -18,7 +18,7 @@
 
 ### [Git](Git)
 - [Flow](Git#git-flow)
-- [Naming](Git#именование-веток)
+- [Branch naming](Git#именование-веток)
 - [Commits](Git#коммиты)
 
 ### [Project](Project)
