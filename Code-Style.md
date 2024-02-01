@@ -152,25 +152,6 @@ namespace Namespace2
 - В качестве параметров метода используйте наиболее ограничивающий тип коллекции, например `IReadOnlyCollection` / `IReadOnlyList` / `IEnumerable`, когда коллекция должна быть неизменяемой.
 - Для результата метода, если вы передаете право собственности на возвращаемую коллекцию, предпочтите IList, или полный тип коллекции, а не IEnumerable. Если право собственности не передается, отдайте предпочтение наиболее ограничивающему варианту.
 
-## Expression body
-
-### Свойства
-
-- Для свойств, доступных только для чтения, по возможности предпочитайте expression body (=>) выражения.  
-Например, `private bool isEmpty => _list == null || _list.Count == 0;`
-- Для всего остального используйте синтаксис { get; set; }. Например, `public int Count => { get; private set; }`
-
-### Методы
-
-По возможности предпочитайте expression body (=>). В случае если все выражение не влезает в строку, переносится тело метода.
-Например, 
-```C#
-public float Foo() => DoSomething(_value);
-
-private float DoSomething(float value) => 
-  (MethodWithVeryLongName(value) + MethodWithVeryLongName2(value)) / MethodWithVeryLongName3(value);
-```
-
 ## Структуры и классы
 
 Структуры всегда передаются и возвращаются по значению, а классы по ссылке.
@@ -239,6 +220,25 @@ public string PrisonerReport(IReadOnlyCollection<Prisoner> prisonerList)
 > 3  
 > ```  
 > </details>
+
+## Expression body
+
+### Свойства
+
+- Для свойств, доступных только для чтения, по возможности предпочитайте expression body (=>) выражения.  
+Например, `private bool isEmpty => _list == null || _list.Count == 0;`
+- Для всего остального используйте синтаксис { get; set; }. Например, `public int Count => { get; private set; }`
+
+### Методы
+
+По возможности предпочитайте expression body (=>). В случае если все выражение не влезает в строку, переносится тело метода.
+Например, 
+```C#
+public float Foo() => DoSomething(_value);
+
+private float DoSomething(float value) => 
+  (MethodWithVeryLongName(value) + MethodWithVeryLongName2(value)) / MethodWithVeryLongName3(value);
+```
 
 ## Использование `ref` и `out`
 
