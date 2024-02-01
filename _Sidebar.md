@@ -22,3 +22,5 @@
 - [Commits](Git#коммиты)
 
 ## [Project](Project)
+- [Naming](Project#именование-файлов-и-папок)
+- [Hierarchy](Project#иерархия)
