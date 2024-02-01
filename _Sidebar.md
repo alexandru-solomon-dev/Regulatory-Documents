@@ -6,7 +6,7 @@
 - [Recommendation](Code-Style#рекомендации-по-кодированию)
   - [Const](Code-Style#константы)
   - [Collection](Code-Style#коллекции)
-  - [Struct $ class](Code-Style#структуры-и-классы)
+  - [Struct & class](Code-Style#структуры-и-классы)
   - [String](Code-Style#строки)
   - [Delegate & event](Code-Style#делегаты-лямбды-и-события)
   - [Syntactic sugar](Code-Style#expression-body)
