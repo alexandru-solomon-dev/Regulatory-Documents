@@ -32,7 +32,7 @@
 
 # Коллекции
 
-`Array` и `List<T>` представляют линейные, смежные контейнеры.  
+[`Array`](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/arrays) и [`List<T>`](https://learn.microsoft.com/ru-ru/dotnet/api/system.collections.generic.list-1?view=net-8.0) представляют линейные, смежные контейнеры.  
 В Array фиксированный объем, в то время как у `List<T>` может меняться размер.  
 В некоторых случаях массивы более производительны, но в целом `List<T>` более гибкий.
 
