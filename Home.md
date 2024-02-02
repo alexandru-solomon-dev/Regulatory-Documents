@@ -12,9 +12,7 @@
 <img width="16" height="16" src="https://github.com/Krasnov-Midnight/Regulatory-Documents/blob/main/Image/Icon/Git_Red.png?raw=true">
 &ensp; <a href="Git">Git</a> <br>
 
-<picture>
-  <img width="16" height="16" src="https://github.com/Krasnov-Midnight/Regulatory-Documents/blob/main/Image/Icon/folder.png">
-</picture> 
+<img width="16" height="16" src="https://github.com/Krasnov-Midnight/Regulatory-Documents/blob/main/Image/Icon/folder.png">
 &ensp; <a href="Project">Project</a> <br>
 
 <picture>
