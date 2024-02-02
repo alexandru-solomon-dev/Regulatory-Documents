@@ -24,3 +24,5 @@
 ## [Project](Project)
 - [Naming](Project#именование-файлов-и-папок)
 - [Hierarchy](Project#иерархия)
+
+### [Terms and explanations](Terms-and-explanations)
