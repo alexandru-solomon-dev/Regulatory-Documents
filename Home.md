@@ -10,7 +10,7 @@
 <br>
 
 <picture>
-  <img width="16" height="16" src="https://github.com/Krasnov-Midnight/Regulatory-Documents/blob/raw/main/Image/Icon/Git_Red.png?raw=true">
+  <img width="16" height="16" src="https://github.com/Krasnov-Midnight/Regulatory-Documents/blob/main/Image/Icon/Git_Red.png?raw=true">
 </picture> 
 &ensp; <a href="Git">Git</a> <br>
 
