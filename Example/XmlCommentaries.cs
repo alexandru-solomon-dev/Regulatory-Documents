@@ -8,15 +8,22 @@ namespace Example
   /// <summary>
   /// Example with illustration of how to use xml-comments and its design rules.
   /// </summary>
+  /// <seealso cref="MonoBehaviour"/>
   public class XmlCommentaries : MonoBehaviour
   {
     /// <summary>
     /// Nested class that is not needed for anything.
     /// </summary>
     /// <typeparam name="T">Base Element Type. Which is not needed here.</typeparam>
-    protected class MyClass<T>
+    /// <seealso cref="IDisposable"/>
+    /// <seealso cref="IMyInterface"/>
+    protected class MyClass<T> : IDisposable, IMyInterface
     {
-      
+      protected T Value;
+    
+      public void Dispose()
+      {
+      }
     }
 
     /// <summary>
