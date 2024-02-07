@@ -17,10 +17,10 @@ namespace Example
     /// <typeparam name="T">Base Element Type. Which is not needed here.</typeparam>
     /// <seealso cref="IDisposable"/>
     /// <seealso cref="IMyInterface"/>
-    protected class MyClass<T> : IDisposable, IMyInterface
+    public class MyClass<T> : IDisposable, IMyInterface<T>
     {
-      protected T Value;
-    
+      public T Value { get; protected set; }
+
       public void Dispose()
       {
       }
