@@ -2,10 +2,12 @@
 
 ## Установка
 
-### Fluent Assertions
+Нам необходим `Test Framework`, `NSubstitute` и `Fluent Assertions`
 
-Устанавливаем через Package Manager, указав ссылку на гит:  
-`https://github.com/BoundfoxStudios/fluentassertions-unity.git#upm`
+По умолчанию `Test Framework` установлен. В противном случае установите его через `Package Manager`, из списка `Unity Registry`.
+После добавляем `NSubstitute` и `Fluent Assertions`, указав ссылку на гит:  
+`https://github.com/BoundfoxStudios/fluentassertions-unity.git#upm`  
+`https://github.com/Thundernerd/Unity3D-NSubstitute.git`  
 
 ## Выделение `asmdef`
 
@@ -24,5 +26,7 @@
 Открываем `Windows -> General -> Test Runner`.  
 Выберем директорию для папки с тестами и нажимаем на кнопку `Create PlayMode Test Assembly Folder` во вкладе `play mode`.  
 После будет создана папка `Tests` и `asmdef`.
-Указываем в `Assembly Definition References` указываетм ссылку на `asmdef` игры и `Fluent Assertions`.
+Указываем в `Assembly Definition References` указываетм ссылку на `asmdef` игры, `Fluent Assertions` и `NSubstitute`.
 Так же можем выставить платформу, только для Editor.
+
+Подготовка завершена и теперь можно писать модульные тесты!
