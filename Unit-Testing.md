@@ -24,7 +24,7 @@
 ```
 
 Открываем `Windows -> General -> Test Runner`.  
-Выберем директорию для папки с тестами и нажимаем на кнопку `Create PlayMode Test Assembly Folder` во вкладе `play mode`.  
+Выберем директорию для папки с тестами и нажимаем на кнопку `Create PlayMode Test Assembly Folder` в `EditorMode`.  
 После будет создана папка `Tests` и `asmdef`.
 Указываем в `Assembly Definition References` указываетм ссылку на `asmdef` игры, `Fluent Assertions` и `NSubstitute`.
 Так же можем выставить платформу, только для Editor.
