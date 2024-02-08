@@ -17,7 +17,7 @@
   - [Commentaries](Code-Style#комментарии)
 
 ## [Git](Git)
-- [Flow](Git#git-flow)
+- [Flow](Git#ветвление)
 - [Branch naming](Git#именование-веток)
 - [Commits](Git#коммиты)
 
