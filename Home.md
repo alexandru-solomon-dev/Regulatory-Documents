@@ -22,4 +22,6 @@
 </picture> 
 &ensp; <a href="Scene">Scene</a> <br>
 
+<!-- Ссылка на незаполненную страницу
 💡 &nbsp;[Terms and explanations](Terms-and-explanations)
+-->
