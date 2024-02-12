@@ -15,13 +15,13 @@
 <img width="16" height="16" src="https://github.com/Krasnov-Midnight/Regulatory-Documents/blob/main/Image/Icon/folder.png">
 &ensp; <a href="Project">Project</a> <br>
 
+<!-- Ссылка на незаполненную страницу
 <picture>
   <source media="(prefers-color-scheme: light)" srcset ="https://github.com/Krasnov-Midnight/Regulatory-Documents/blob/main/Image/Icon/unity_black.png">
   <source media="(prefers-color-scheme: dark)" srcset ="https://github.com/Krasnov-Midnight/Regulatory-Documents/blob/main/Image/Icon/unity_white.png">
   <img width="16" height="16" src="https://github.com/Krasnov-Midnight/Regulatory-Documents/blob/main/Image/Icon/unity_black.png">
 </picture> 
 &ensp; <a href="Scene">Scene</a> <br>
-
-<!-- Ссылка на незаполненную страницу
-💡 &nbsp;[Terms and explanations](Terms-and-explanations)
 -->
+
+💡 &nbsp;[Terms and explanations](Terms-and-explanations)
