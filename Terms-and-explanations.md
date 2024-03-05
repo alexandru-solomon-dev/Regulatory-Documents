@@ -36,8 +36,8 @@
 В Array фиксированный объем, в то время как у `List<T>` может меняться размер.  
 В некоторых случаях массивы более производительны, но в целом `List<T>` более гибкий.
 
-Класс [`Queue<T>`](https://learn.microsoft.com/ru-ru/dotnet/api/system.collections.generic.queue-1?view=net-8.0) представляет коллекцию, которая работает по алгоритму **FIFO** ("первый вошел - первый вышел").  
-Класс [`Stack<T>`](https://learn.microsoft.com/ru-ru/dotnet/api/system.collections.generic.stack-1?view=net-8.0) представляет коллекцию, которая работает по алгоритму **LIFO** ("последний вошел - первый вышел"). 
+Класс [`Queue<T>`](https://learn.microsoft.com/ru-ru/dotnet/api/system.collections.generic.queue-1?view=net-8.0) представляет коллекцию работающую по алгоритму **FIFO** ("первый вошел - первый вышел").  
+Класс [`Stack<T>`](https://learn.microsoft.com/ru-ru/dotnet/api/system.collections.generic.stack-1?view=net-8.0) представляет коллекцию работающую по алгоритму **LIFO** ("последний вошел - первый вышел"). 
 
 > [!Note]
 > Коллекции `Queue<T>` и `Stack<T>` в .NET реализованы на основе массива, а не как связанный список.  
