@@ -42,7 +42,7 @@
 > [!Note]
 > Коллекции `Queue<T>` и `Stack<T>` в .NET реализованы на основе массива, а не как связанный список.  
 
-Класс [`Dictionary<TKey, TValue>`](https://learn.microsoft.com/ru-ru/dotnet/api/system.collections.generic.dictionary-2?view=net-8.0) представляет реализацию словаря, хранит объекты, пары ключ-значение. Все ключи должны быть уникальными. При попытки добавления пары ключ-значения с уже имеющимся ключом в словаре - выдаст ошибку.   
+Класс [`Dictionary<TKey, TValue>`](https://learn.microsoft.com/ru-ru/dotnet/api/system.collections.generic.dictionary-2?view=net-8.0) представляет реализацию словаря, хранит объекты, пары ключ-значение. Все ключи должны быть уникальными. При попытке добавления пары ключ-значения с уже имеющимся ключом в словаре - выдаст ошибку.   
 Класс [`HashSet<T>`](https://learn.microsoft.com/ru-ru/dotnet/api/system.collections.generic.hashset-1?view=net-8.0) представляет классическое математическое множество. Все объекты уникальны. Если попытаться добавить уже существующий объект в коллекции, то метод `Add(T)` вернет `false` и добавления не произойдет. У каждого элемента есть свой хеш-код, позволяющий идентифицировать его в таблице. Имеется метод `UnionWith(IEnumerable<T>)` позволяющий легко добавлять элементы в множество из других коллекций.  
 Класс [`LinkedList<T>`](https://learn.microsoft.com/ru-ru/dotnet/api/system.collections.generic.linkedlist-1?view=net-8.0) представляет реализацию двухсвязанного списка.
 
