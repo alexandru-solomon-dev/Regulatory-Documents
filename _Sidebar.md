@@ -22,6 +22,7 @@
 - [Commits](Git#коммиты)
 
 ## [Project](Project)
+- [Unity version](Project#версия-unity)
 - [Naming](Project#именование-файлов-и-папок)
 - [Hierarchy](Project#иерархия)
 
