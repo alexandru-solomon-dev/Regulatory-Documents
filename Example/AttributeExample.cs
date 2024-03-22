@@ -17,22 +17,18 @@ namespace Example
     [HideInInspector] public int DontVisibleForInspector;
 
     [Header("Functional variables block")]
-    [Tooltip("Description for field")]
+    [Tooltip("Description for field _powerValue")]
     [Range(_minimum, _maximum)]
-    [SerializeField]
-    private float _powerValue = _minimum;
+    [SerializeField] private float _powerValue = _minimum;
 
     [SerializeField] private int _multiplier1 = 0;
 
-    [Tooltip("Description for field")]
+    [Tooltip("Description for field _multiplier2")]
     [Min(0)]
-    [SerializeField]
-    private int _multiplier2;
+    [SerializeField] private int _multiplier2;
 
     [Header("Functional variables block 2")]
-    [SerializeField]
-    private int _functionalVarriable1;
-
+    [SerializeField] private int _functionalVarriable1;
     [SerializeField] private int _functionalVarriable2;
     [SerializeField] private int _functionalVarriable3;
     [SerializeField] private int _functionalVarriable4;
