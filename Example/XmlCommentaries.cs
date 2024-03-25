@@ -36,7 +36,8 @@ namespace Example
 
     /* Although xml can't get a reference to parameters for events,
        describing them like this will be useful
-       to clarify which parameter is responsible for what. */
+       to clarify which parameter is responsible for what. 
+       However, if such questions arise, it is better to declare a delegate for such an event. */
     
     /// <summary>
     /// This event notify about something.
