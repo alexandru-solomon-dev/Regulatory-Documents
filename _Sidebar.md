@@ -12,7 +12,7 @@
   - [String](Code-Style#строки)
   - [Delegate & event](Code-Style#делегаты-лямбды-и-события)
   - [Syntactic sugar](Code-Style#expression-body)
-  - [Usage ref & out](Code-Style#использование-ref-и-out)
+  - [Usage ref, in & out](Code-Style#использование-ref-in-и-out)
   - [Attribute](Code-Style#атрибуты)
   - [Commentaries](Code-Style#комментарии)
 
