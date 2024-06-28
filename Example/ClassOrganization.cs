@@ -112,13 +112,29 @@ namespace Example
       Counter--;
     }
 
-    //Custom constructors for Monobehavior's, Initializing, Dispose
+    // Enumerable and Indexators
+    public IEnumerable<float> values => _floatList;
+
+    public int this[int index]
+    {
+      get
+      {
+        if (_floatList == null)
+          return 0;
+
+        if (index < 0 || index >= limits.Length)
+          return 0;
+
+        return _floatList[index];
+    }
+
+    //Custom constructors for Monobehavior's and Initializing
     public void Init() 
     {
       //...
     }
 
-
+    // Dispose and another public clean methods
     public void Dispose()
     {
       //...
