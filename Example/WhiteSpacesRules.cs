@@ -117,8 +117,8 @@ namespace Example
 
     // If aligning argument lines with the first argument doesn't fit, or is difficult to
     // read, wrap all arguments on new lines with a 4 space indent.
-    private void AnotherVeryLongFunctionNameThatCausesLineWrappingProblems(
-        int longArgumentName, int longArgumentName2, int longArgumentName3, int longArgumentName4, int longArgumentName5)
+    private void AnotherVeryLongFunctionNameThatCausesLineWrappingProblems(int longArgumentName, 
+      int longArgumentName2, int longArgumentName3, int longArgumentName4, int longArgumentName5)
     { }
 
     private void CallingLongFunctionName()
@@ -130,8 +130,8 @@ namespace Example
                                                                 veryLongArgumentName, veryLongArgumentName);
       // If aligning argument lines with the first argument doesn't fit, or is difficult to
       // read, wrap all arguments on new lines with a 4 space indent.
-      AnotherVeryLongFunctionNameThatCausesLineWrappingProblems(
-          veryLongArgumentName, veryLongArgumentName, veryLongArgumentName, veryLongArgumentName,veryLongArgumentName);
+      AnotherVeryLongFunctionNameThatCausesLineWrappingProblems(veryLongArgumentName, veryLongArgumentName, 
+          veryLongArgumentName, veryLongArgumentName,veryLongArgumentName);
     }
   }
 }
