@@ -8,7 +8,7 @@ namespace Example
   /// An example of class member ordering. Don't pay attention to horrible names.
   /// </summary>
   [Serializable]
-  public class ClassOrganization
+  public class ClassOrganization : IDisposable
   {
     // Nested Classes
     [Serializable]
@@ -111,6 +111,19 @@ namespace Example
       _delegatesQueue = null;
       Counter--;
     }
+
+    //Custom constructors for Monobehavior's, Initializing, Dispose
+    public void Init() 
+    {
+      //...
+    }
+
+
+    public void Dispose()
+    {
+      //...
+    }
+
 
     // public Methods
     public void PublicFoo1()
